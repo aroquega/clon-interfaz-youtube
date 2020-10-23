@@ -1,4 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *, *::before, *::after{
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    background: none;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+#content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#appbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/13;
+    height: 3em;
+    padding: 0 1em;
+}
+
+#search-bar-input {
+    background-color: blue;
+    height: 100%;
+}
+
+#search-bar-input-button{
+    height: 100%;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px){
+    .desktop-only{
+        display: none;
+    }
 }

@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Clone</title>
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
-    <h1>Youtube Clone</h1>
+    <div id="content">
+        <header id="appbar">
+            <section class="align-center">
+                <button class="material-icons md-dark"> menu </button>
+                <span> Youtube </span>
+            </section>
+            <section id="search-bar" class="align-center">
+                <div class="mobile-only align-center">
+                    <button
+                    class="material-icons md-dark">
+                    search
+                    </button>
+                </div>
+                <div class="desktop-only">
+                    <input id="search-bar-input">
+                    <button 
+                    id="search-bar-input-button"
+                    class="material-icons md-dark">search</button>
+                </div>
+            </section>
+            <section id="controles" class="align-center">
+                <button class="material-icons md-dark">video_call</button>
+                <button class="material-icons md-dark">apps</button>
+                <button class="material-icons md-dark">more_vert</button>
+                <button class="align-center">
+                    <i class="material-icons">person</i> Acceder
+                </button>
+            </section>
+        </header>
+    </div>
 </body>
 </html>

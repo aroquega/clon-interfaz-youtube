@@ -22,13 +22,16 @@ input, button {
     grid-template-columns: repeat(12, 1fr);
 }
 
+#youtube-logo{
+    width: 7em;
+}
+
 #appbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     grid-column: 1/13;
     height: 3em;
-    padding: 0 1em;
 }
 
 #search-bar-input {

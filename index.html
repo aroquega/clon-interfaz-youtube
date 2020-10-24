@@ -7,13 +7,14 @@
     <link href="styles/base.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <script src="scripts/drawer.js" defer></script>
 </head>
 <body>
     <div id="content">
         <header id="appbar">
             <section class="align-center">
-                <button class="material-icons md-dark"> menu </button>
-                <img id="youtube-logo" src="icons/yt_logo_rgb_light.svg" alt="Youtube">
+                <button class="material-icons drawer-button"> menu </button>
+                <img class="youtube-logo" src="icons/yt_logo_rgb_light.svg" alt="Youtube">
             </section>
             <section id="search-bar" class="align-center">
                 <div class="mobile-only align-center">
@@ -22,11 +23,12 @@
                     search
                     </button>
                 </div>
-                <div class="desktop-only">
+                <div class="align-center desktop-only w-100">
                     <input id="search-bar-input">
                     <button 
-                    id="search-bar-input-button"
-                    class="material-icons md-dark">search</button>
+                    id="search-bar-input-button">
+                    <span class="material-icons">search</span>
+                    </button>
                 </div>
             </section>
             <section id="controles" class="align-center">
@@ -41,6 +43,18 @@
                 </button>
             </section>
         </header>
+        <div id="faded" class="faded">
+        </div>
+        <nav id="drawer" class="drawer">
+            <header class="align-center">
+                <button class="material-icons drawer-button"> menu </button>
+                <img class="youtube-logo" src="icons/yt_logo_rgb_light.svg">
+            </header>
+            <hr>
+            <section>
+
+            </section>
+        </nav>
     </div>
 </body>
 </html>

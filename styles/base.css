@@ -6,13 +6,17 @@
 }
 
 :root{
+    --red: #FF0000;
     --blue: #167ac6;
     --black: #212121;
     --gray: rgba(0, 0, 0, 0.54);
+    --light-gray: #e5e5e5;
 }
 
 html {
     font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    font-size: 14px;
 }
 
 input {
@@ -64,6 +68,11 @@ hr {
     justify-content: center;
 }
 
+.section-title{
+    font-weight: bold;
+    color: var(--gray);
+}
+
 #search-bar-input {
     border: 1px solid var(--gray);
     border-right: none;
@@ -74,29 +83,53 @@ hr {
 
 #search-bar-input-button{
     border: 1px solid var(--gray);
+    background-color: var(--light-gray);
     height: 100%;
 }
 
 .drawer {
     position: absolute;
-    width: 55%;
+    width: 70%;
     height: 100%;
     transform: translateX(-100%);
-    overflow-y: auto;
     z-index: 2;
     background-color: white;
     transition: transform 0.3s ease-in-out;
+    overflow-y: hidden;
+}
+
+.drawer-content {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.drawer-content:hover{
+    overflow-y: scroll;
+}
+
+.drawer section {
+    padding: 1em 1.5em;
 }
 
 .drawer ul {
     list-style-type: none;
-    padding: 0.5em 1em;
+    padding: 0;
 }
 
 .item-link {
     display: flex;
     align-items: center;
-    margin: 0.5em 0;
+    padding: 0.5em 2em;
+    margin: 0 -1.5em;
+}
+
+.item-link.selected{
+    background-color: var(--light-gray);
+    font-weight: bold;
+}
+
+.item-link.selected .material-icons{
+    color: var(--red);
 }
 
 .item-link span {
@@ -129,7 +162,7 @@ hr {
 .blue-btn{
     border: 1px solid var(--blue);
     padding: 0.2em;
-    margin-right: 0.3em; 
+    margin: 0.5em; 
 }
 
 .blue-btn * {
@@ -163,5 +196,9 @@ hr {
     }
     .mobile-only{
         display: none;
+    }
+
+    .drawer {
+        width: 18%;
     }
 }

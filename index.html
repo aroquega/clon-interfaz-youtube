@@ -43,6 +43,19 @@
                 </button>
             </section>
         </header>
+        <main>
+            <article>
+                <figure>
+                    <img width="300" height="200">
+                    <figcaption>
+                        <p>Title</p>
+                        <p>Author</p>
+                        <p>Visualizations</p>
+                        <p>TimeStamp</p>
+                    </figcaption>
+                </figure>
+            </article>
+        </main>
         <div id="faded" class="faded">
         </div>
         <nav id="drawer" class="drawer">
@@ -51,143 +64,145 @@
                 <img class="youtube-logo" src="icons/yt_logo_rgb_light.svg">
             </header>
             <hr>
-            <section>
-                <ul>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">home</span> Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">local_fire_department</span>Tendencias
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">subscriptions</span>Suscripciones
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <hr>
-            <section>
-                <ul>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">video_library</span> Biblioteca
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">history</span> Historial
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <hr>
-            <section>
-                <p>
-                    Accede para dar "Me gusta" a los videos,
-                    realizar comentarios y suscribirte.
-                </p>
-                <button class="align-center blue-btn">
-                    <i id="icon" class="material-icons">person</i>
-                    <span class="text">ACCEDER</span>
-                </button>
-            </section>
-            <hr>
-            <section>
-                <p>LO MEJOR DE YOUTUBE</p>
-                <ul>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">library_music</span> Música
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">sports_soccer</span> Deportes
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">videogame_asset</span> Videojuegos
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">article</span> Noticias
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">live_tv</span> En vivo
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">class</span> Aprendizaje
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">3d_rotation</span> Vídeos en 360
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <hr>
-            <section>
-                <ul>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">library_add</span> Explorar Canales
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <hr>
-            <section>
-                <p>MÁS DE YOUTUBE</p>
-                <ul>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">starts</span> Youtube Premium
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">live_tv</span> En vivo
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <hr>
-            <section>
-                <ul>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">settings</span> Configuración
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">flag</span> Historial de Denuncias
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">help</span> Ayuda
-                        </a>
-                    </li>
-                    <li>
-                        <a class="item-link">
-                            <span class="material-icons">live_help</span> Enviar Comentarios
-                        </a>
-                    </li>
-                </ul>
-            </section>
+            <div class="drawer-content">
+                <section>
+                    <ul>
+                        <li>
+                            <a class="item-link selected">
+                                <span class="material-icons">home</span> Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">local_fire_department</span>Tendencias
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">subscriptions</span>Suscripciones
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <hr>
+                <section>
+                    <ul>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">video_library</span> Biblioteca
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">history</span> Historial
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <hr>
+                <section>
+                    <p>
+                        Accede para dar "Me gusta" a los videos,
+                        realizar comentarios y suscribirte.
+                    </p>
+                    <button class="align-center blue-btn">
+                        <i id="icon" class="material-icons">person</i>
+                        <span class="text">ACCEDER</span>
+                    </button>
+                </section>
+                <hr>
+                <section>
+                    <p class="section-title">LO MEJOR DE YOUTUBE</p>
+                    <ul>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">library_music</span> Música
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">sports_soccer</span> Deportes
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">videogame_asset</span> Videojuegos
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">article</span> Noticias
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">live_tv</span> En vivo
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">class</span> Aprendizaje
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">3d_rotation</span> Vídeos en 360
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <hr>
+                <section>
+                    <ul>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">library_add</span> Explorar Canales
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <hr>
+                <section>
+                    <p class="section-title">MÁS DE YOUTUBE</p>
+                    <ul>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">star</span> Youtube Premium
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">live_tv</span> En vivo
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <hr>
+                <section>
+                    <ul>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">settings</span> Configuración
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">flag</span> Historial de Denuncias
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">help</span> Ayuda
+                            </a>
+                        </li>
+                        <li>
+                            <a class="item-link">
+                                <span class="material-icons">live_help</span> Enviar Comentarios
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </nav>
     </div>
 </body>
